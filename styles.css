@@ -1077,30 +1077,59 @@ a {
     
     .hero {
         padding-top: 100px;
+        min-height: auto;
+    }
+    
+    .hero-content {
+        margin-bottom: 40px;
     }
     
     .hero-title {
         font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+        margin-bottom: 30px;
     }
     
     .hero-buttons {
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        gap: 12px;
     }
     
     .btn {
         width: 100%;
         justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.95rem;
     }
     
     .hero-stats {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .stat-card {
+        flex: 1;
+        min-width: 120px;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
     }
     
     .section-title {
@@ -1110,14 +1139,27 @@ a {
     .about-content,
     .social-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .about-card {
-        padding: 30px 20px;
+        padding: 25px 20px;
+        text-align: center;
     }
     
     .social-card {
-        padding: 25px 20px;
+        padding: 20px 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .social-icon {
+        font-size: 2rem;
+    }
+    
+    .social-arrow {
+        display: none;
     }
     
     .phone-number {
@@ -1131,8 +1173,14 @@ a {
     .cta-buttons {
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
         margin: 0 auto;
+        gap: 12px;
+    }
+    
+    .btn-large {
+        padding: 15px 25px;
+        font-size: 1rem;
     }
     
     .footer-content {
@@ -1156,23 +1204,60 @@ a {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
     }
     
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 12px;
     }
     
     .stat-card {
-        padding: 20px 25px;
+        padding: 15px 20px;
+        min-width: auto;
     }
     
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .about-card {
+        padding: 20px 15px;
+    }
+    
+    .social-card {
+        padding: 15px 12px;
     }
     
     .location-info {
-        padding: 25px 20px;
+        padding: 20px 15px;
+    }
+    
+    .btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-large {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .container {
+        padding: 0 15px;
     }
 }
 
