@@ -1135,6 +1135,20 @@ a {
     .social-links {
         justify-content: center;
     }
+    
+    /* Keep location section horizontal on mobile */
+    .location-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .location-info {
+        padding: 30px 20px;
+    }
+    
+    .map-container iframe {
+        height: 300px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1193,6 +1207,33 @@ a {
     
     .container {
         padding: 0 15px;
+    }
+    
+    /* Keep location section horizontal even on small screens */
+    .location-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .location-info {
+        padding: 20px 15px;
+        order: 1;
+    }
+    
+    .map-container {
+        order: 2;
+    }
+    
+    .map-container iframe {
+        height: 250px;
+    }
+    
+    .location-address h3 {
+        font-size: 1.1rem;
+    }
+    
+    .location-address p {
+        font-size: 0.9rem;
     }
 }
 
